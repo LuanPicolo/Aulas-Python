@@ -1,4 +1,5 @@
 '''
+# ex 10
 # morango 19,90kg (ate 5kg) mais fica 15,20kg
 # maçã 8,80kg (ate 5k) mais fica 7,50kg
 # mais de 8kg e der mais de 25, ele ganha desconto de 10% sobre o total
@@ -30,6 +31,7 @@ print("Você comprou " + str(morangopeso) + " Kgs de morango, " + str(macapeso) 
 
 
 '''
+# ex 11
 # ler as notas, calcular media e atribuir conceito
 # A = 9 - 10
 # B = 7.5 - 9
@@ -42,18 +44,18 @@ nota1 = float(input("Insira a primeira nota: "))
 nota2 = float(input("Insira a segunda nota: "))
 media = (nota1 + nota2) / 2
 
-if media > 9:
+if media >= 9:
     conceito = "A"
-elif media < 9 and media >= 7.5:
+elif media >= 7.5:
     conceito = 'B'
-elif media < 7.5 and media >= 6:
+elif media >= 6:
     conceito = 'C'
-elif media < 6 and media >= 4:
+elif media >= 4:
     conceito = 'D'
 elif media < 4:
     conceito = 'E'
 
-if conceito == 'A' or conceito == 'B':
+if conceito == 'A' or conceito == 'B' or conceito == 'C':
     aprovacao = "APROVADO"
 else:
     aprovacao = "REPROVADO"
@@ -63,10 +65,19 @@ print("Resultado: " + conceito + "\n")
 print("Aprovação: O alundo foi " + aprovacao)
 '''
 
+'''
+# ex 12
 
-numero = input("Digite um numero de 3 digitos: ")
+numero = int(input("Digite um numero de 3 digitos: "))
 
-if (numero[0] < numero[1] and numero[2]) and (numero[1] < numero[2]):
-    print("Esse numero é formado por numero em ordem crescente!")
+n1 = numero // 100
+n2 = (numero // 10) % 10
+n3 = numero % 10
+
+print(n1, n2, n3)
+
+if (n1 < n2 and n3) and n2 < n3:
+    print("O numero está em ordem crescente!")
 else:
-    print("Esse numero é formado por numeros em ordem decrescente!")
+    print("O numero nao esta em ordem crescente!")
+'''
