@@ -24,7 +24,6 @@ while y < 70:
     print(y)
 
 
-
 texto = input("Insira algo aqui: ")
 
 for x, i in enumerate(texto, 1):
@@ -77,4 +76,38 @@ idadeNova =
 idadeVelha = 
 
 while idade < 0:
+'''
+
+
+
+'''
+
+n = int(input("Insira um numero: "))
+orig = n
+inv = 0
+
+while n > 0:
+    inv = inv*10 + n % 10
+    n = n // 10
+    print(inv)
+if inv == orig:
+    print("Palindromo")
+else:
+    print("não é")
+'''
+
+n = int(intput("Insira um numero: "))
+
+s = 0
+inv = 0
+
+while n > 0:
+    inv = inv*10 + n % 10
+    inv = inv % 10
+    n = n // 10
+
+    s = s + inv
+
+    print(inv, n)
+print("Soma = ", s)
 '''
