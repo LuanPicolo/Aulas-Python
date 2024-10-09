@@ -1,0 +1,22 @@
+'''
+# 2 - media
+def media(numeros):
+    return sum(numeros)/len(numeros)
+
+L = [8,10,9]
+print(media(L))
+'''
+
+# checar se é palindromo
+
+def palindromo(s): #arara
+    s = s.lower()
+    i=0 #a
+    j = len(s) - 1 #a
+    while i < j:
+        if s[i] != s[j]:
+            return False
+        i = i+1
+        j = j-1
+    return True
+print(palindromo("ARARA"))
